@@ -1,8 +1,43 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+
+
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<VBox prefHeight="400.0" prefWidth="640.0" fx:controller="sample.controller.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center" >
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Label alignment="CENTER" layoutX="67.0" layoutY="52.0" style="&#10;" text="podaj wartość" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="var1" layoutX="162.0" layoutY="50.0" onAction="#setVar1"/>
+                <Button fx:id="search" layoutX="338.0" layoutY="50.0" mnemonicParsing="false" onAction="#setVar1" text="Szu" />
+                <Label alignment="CENTER" layoutX="67.0" layoutY="82.0" style="&#10;" text="podaj wartość" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField text="podaj wartość" fx:id="znak" layoutX="162.0" layoutY="80.0" onAction="#setVar1"/>
+                <Button fx:id="search1" layoutX="338.0" layoutY="80.0" mnemonicParsing="false" onAction="#setVar1" text="Szuk" />
+                <Label alignment="CENTER" layoutX="67.0" layoutY="112.0" style="&#10;" text="podaj wartość" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="var2" layoutX="162.0" layoutY="110.0" onAction="#setVar1"/>
+                <Button fx:id="search2" layoutX="338.0" layoutY="110.0" mnemonicParsing="false" onAction="#setVar1" text="Szuka" />
+                <TextField alignment="TOP_RIGHT" layoutX="27.0" layoutY="196.0" prefHeight="26.0" prefWidth="210.0" text="Wynik :" />
+
+                <TextField fx:id="wynik" layoutX="277.0" layoutY="196.0" prefHeight="26.0" prefWidth="50.0" />
+
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
